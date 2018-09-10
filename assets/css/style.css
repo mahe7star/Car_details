@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@-webkit-keyframes piechart {
+  from {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  to {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+@keyframes piechart {
+  from {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  to {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  to {
+    -webkit-transform: rotate(49deg);
+            transform: rotate(49deg);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  to {
+    -webkit-transform: rotate(49deg);
+            transform: rotate(49deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-family: 'Nunito', sans-serif;
+}
+
+body .container .title {
+  padding: 20px;
+}
+
+body .container .car-preview {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+body .container .car-preview .car-wrapper .img-container {
+  text-align: center;
+}
+
+body .container .car-preview .car-wrapper .car-image {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: 80%;
+}
+
+body .container .car-preview .color-div {
+  text-align: center;
+}
+
+body .container .car-preview .color-div .color-cirles {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+body .container .car-preview .color-div .silver {
+  background: #ddd;
+}
+
+body .container .car-preview .color-div .grey {
+  background: #666;
+}
+
+body .container .car-preview .color-div .blue {
+  background: blue;
+}
+
+body .container .car-preview .color-div .red {
+  background: #ff2626;
+}
+
+body .container .car-preview .color-name {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+  color: #999;
+  text-transform: capitalize;
+}
+
+body .container .car-preview .disclaimer {
+  text-align: center;
+  padding: 0 10px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #bbb;
+}
+
+body .container .car-details {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+body .container .car-details .rating {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar {
+  margin-bottom: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9fr 1fr;
+      grid-template-columns: 9fr 1fr;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .bar {
+  height: 20px;
+  background: #fff67d;
+  position: relative;
+  border-radius: 25px;
+  display: inline-block;
+  width: 99%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .bar:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffe100;
+  border-radius: 25px;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .cr:before {
+  width: 87%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .pr:before {
+  width: 64%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .in:before {
+  width: 90%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .sf:before {
+  width: 44%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .rl:before {
+  width: 52%;
+}
+
+body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .reading {
+  display: inline-block;
+  font-weight: bold;
+  color: #444;
+}
+
+body .container .car-details .view-all {
+  text-align: center;
+}
+
+body .container .car-details .view-all a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #009edd;
+}
+
+body .container .car-details .overall-rating {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .car-details .overall-rating .dashboard {
+  text-align: center;
+  position: relative;
+}
+
+body .container .car-details .overall-rating .dashboard .semicircle {
+  border-radius: 100% 100% 0 0;
+  height: 100px;
+  width: 200px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  margin: 0 auto 10px;
+  background: #fff;
+  border: 12px solid #ffe100;
+  border-bottom: none;
+  position: relative;
+  overflow: hidden;
+}
+
+body .container .car-details .overall-rating .dashboard .semicircle:before {
+  content: '';
+  position: absolute;
+  background: #fff67d;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  left: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: piechart;
+  animation-name: piechart;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+body .container .car-details .overall-rating .dashboard .icon-meter {
+  position: absolute;
+  -webkit-transform-origin: 50% 105px;
+          transform-origin: 50% 105px;
+  left: 50%;
+  margin-left: -13px;
+  bottom: -15px;
+  width: 30px;
+  height: 120px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: arrow;
+  animation-name: arrow;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+body .container .car-details .overall-rating .rating-avg {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+body .container .car-details .overall-rating .o-rate {
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .container .car-details .related-cars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  margin-top: 40px;
+}
+
+body .container .car-details .related-cars .cards {
+  margin: 0 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #eee;
+}
+
+body .container .car-details .related-cars .cards .card-image {
+  height: 60px;
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+body .container .car-details .related-cars .cards .car-name {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .container .car-details .related-cars .cards .rate {
+  text-align: center;
+  background: #009edd;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+
+@media (max-width: 1240px) {
+  body .container {
+    -ms-grid-columns: 3fr 5fr;
+        grid-template-columns: 3fr 5fr;
+  }
+}
+
+@media (max-width: 992px) {
+  body .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container .car-preview {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  body .container .car-preview .car-wrapper .car-image {
+    width: 60%;
+  }
+  body .container .car-details {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding: 0 20px;
+  }
+  body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar {
+    margin-bottom: 5px;
+  }
+  body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .bar {
+    height: 12px;
+  }
+  body .container .car-details .overall-rating .dashboard .semicircle {
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+  }
+  body .container .car-details .overall-rating .dashboard .icon-meter {
+    position: absolute;
+    -webkit-transform-origin: 50% 89px;
+            transform-origin: 50% 89px;
+    left: 50%;
+    margin-left: -16px;
+    bottom: -11px;
+    width: 24px;
+    height: 98px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: arrow;
+    animation-name: arrow;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  body .container .car-details .overall-rating .rating-avg {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body .container .car-details .overall-rating .o-rate {
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body body .container .car-details .related-cars {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  body .container .car-preview .car-wrapper .car-image {
+    width: 90%;
+  }
+  body .container .car-details .rating {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  body .container .car-details .rating .overall-rating {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  body .container .car-details .rating .overall-rating .dashboard .semicircle {
+    height: 100px;
+    width: 200px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+  body .container .car-details .rating .overall-rating .dashboard .icon-meter {
+    position: absolute;
+    -webkit-transform-origin: 50% 105px;
+            transform-origin: 50% 105px;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -15px;
+    width: 30px;
+    height: 120px;
+  }
+  body .container .car-details .related-cars {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */

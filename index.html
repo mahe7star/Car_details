@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="car-preview">
+            <div class="title">
+                <h2>Styles</h2>
+            </div>
+            <div class="car-wrapper">
+                <div id="target" class="img-container"></div>
+            </div>
+            <div class="color-div">
+                <a href="javascript:void(0)" class="color-cirles silver" onClick="changeImage('silver')"></a>
+                <a href="javascript:void(0)" class="color-cirles grey" onClick="changeImage('grey')"></a>
+                <a href="javascript:void(0)" class="color-cirles red" onClick="changeImage('red')"></a>
+                <a href="javascript:void(0)" class="color-cirles blue" onClick="changeImage('blue')"></a>
+            </div>
+            <div class="color-name">
+                Red
+            </div>
+            <div class="disclaimer">
+                Vehicle images are guides only and may not reflect the model's exact specifications/features- exact
+                specifications/features should be confirmed with the seller.
+            </div>
+        </div>
+        <div class="car-details">
+            <div class="title">
+                <h2>Ratings</h2>
+            </div>
+            <div class="rating">
+                <div class="rating-wrapper">
+                    <div class="bar-wrapper">
+                        <span class="label">Critic's Rating</span>
+                        <div class="rating-bar">
+                            <div class="bar cr"></div>
+                            <div class="reading">87</div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <span class="label">Performance</span>
+                        <div class="rating-bar">
+                            <div class="bar pr"></div>
+                            <div class="reading">64</div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <span class="label">Interior</span>
+                        <div class="rating-bar">
+                            <div class="bar in"></div>
+                            <div class="reading">90</div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <span class="label">Safety</span>
+                        <div class="rating-bar">
+                            <div class="bar sf"></div>
+                            <div class="reading">44</div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <span class="label">Relaibility</span>
+                        <div class="rating-bar">
+                            <div class="bar rl"></div>
+                            <div class="reading">52</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overall-rating">
+                    <div class="overall-wrapper">
+                        <div class="dashboard">
+                            <div class="semicircle"></div>
+                            <img src="assets/images/color/icon-meter.png" alt="" class="icon-meter">
+                        </div>
+                        <div class="rating-avg">
+                            88
+                        </div>
+                        <div class="o-rate">Overall Rating</div> 
+                    </div>  
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="javascript:void(0)">View All Reviews &nbsp;<i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="related-cars">
+                <div class="cards">
+                    <div class="card-image">
+                        <img src="assets/images/layer_512.png" alt="">
+                    </div>
+                    <p class="car-name">
+                        Hyundai i40 Wagon
+                    </p>
+                    <div class="rate">8.3</div>
+                </div>
+                <div class="cards">
+                    <div class="card-image">
+                        <img src="assets/images/layer_526.png" alt="">
+                    </div>
+
+                    <p class="car-name">
+                        Hyundai i40 Wagon
+                    </p>
+                    <div class="rate">8.3</div>
+                </div>
+                <div class="cards">
+                    <div class="card-image">
+                        <img src="assets/images/layer_526.png" alt="">
+                    </div>
+
+                    <p class="car-name">
+                        Holden Astra
+                    </p>
+                    <div class="rate">8.3</div>
+                </div>
+                <div class="cards">
+                    <div class="card-image">
+                        <img src="assets/images/layer_526.png" alt="">
+                    </div>
+                    <p class="car-name">
+                        Holden Astra
+                    </p>
+                    <div class="rate">8.3</div>
+                </div>
+
+                <div class="cards">
+                    <div class="card-image">
+                        <img src="assets/images/layer_526.png" alt="">
+                    </div>
+                    <p class="car-name">
+                        Holden Astra
+                    </p>
+                    <div class="rate">8.3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MustacheJS Template -->
+    <script id="template" type="x-tmpl-mustache">
+        <img src="assets/images/color/{{name}}.jpg" alt="" class="car-image">
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.2/mustache.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
