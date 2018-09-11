@@ -43,6 +43,96 @@
   }
 }
 
+@-webkit-keyframes progress1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 87%;
+  }
+}
+
+@keyframes progress1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 87%;
+  }
+}
+
+@-webkit-keyframes progress2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 64%;
+  }
+}
+
+@keyframes progress2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 64%;
+  }
+}
+
+@-webkit-keyframes progress3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes progress3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes progress4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 44%;
+  }
+}
+
+@keyframes progress4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 44%;
+  }
+}
+
+@-webkit-keyframes progress5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 52%;
+  }
+}
+
+@keyframes progress5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 52%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -168,23 +258,58 @@ body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .b
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .cr:before {
-  width: 87%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: progress1;
+  animation-name: progress1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .pr:before {
-  width: 64%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: progress2;
+  animation-name: progress2;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .in:before {
-  width: 90%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: progress3;
+  animation-name: progress3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .sf:before {
-  width: 44%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: progress4;
+  animation-name: progress4;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .rl:before {
-  width: 52%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: progress5;
+  animation-name: progress5;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .reading {

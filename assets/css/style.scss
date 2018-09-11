@@ -17,7 +17,63 @@
     to {
         transform: rotate(49deg);
     }
-} 
+}
+@include keyframes(progress1) {
+	from{
+		width: 0;
+	}
+    to {
+        width: 87%;
+    }
+}
+@include keyframes(progress2) {
+	from{
+		width: 0;
+	}
+    to {
+        width: 64%;
+    }
+}
+@include keyframes(progress3) {
+	from{
+		width: 0;
+	}
+    to {
+        width: 90%;
+    }
+}
+@include keyframes(progress4) {
+	from{
+		width: 0;
+	}
+    to {
+        width: 44%;
+    }
+}
+@include keyframes(progress5) {
+	from{
+		width: 0;
+	}
+    to {
+        width: 52%;
+    }
+}
+@mixin progress1 {
+    @include animate(progress1, 2s, 1, forwards);
+}
+@mixin progress2 {
+    @include animate(progress2, 2s, 1, forwards);
+}
+@mixin progress3 {
+    @include animate(progress3, 2s, 1, forwards);
+}
+@mixin progress4 {
+    @include animate(progress4, 2s, 1, forwards);
+}
+@mixin progress5 {
+    @include animate(progress5, 2s, 1, forwards);
+}
+
 @mixin arrow {
     @include animate(arrow, 2s, 1, forwards);
 }
@@ -128,27 +184,27 @@ body{
                             }
                             .cr{
                                 &:before{
-                                    width: 87%;
+                                    @include progress1();
                                 }
                             }
                             .pr{
                                 &:before{
-                                    width: 64%;
+                                    @include progress2();
                                 }
                             }
                             .in{
                                 &:before{
-                                    width:90%;
+                                    @include progress3();
                                 }
                             }
                             .sf{
                                 &:before{
-                                    width: 44%
+                                    @include progress4();
                                 }
                             }
                             .rl{
                                 &:before{
-                                    width: 52%;
+                                    @include progress5();
                                 }
                             }
                             .reading{
