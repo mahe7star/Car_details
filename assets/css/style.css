@@ -181,6 +181,16 @@ body .container .car-preview .color-div .color-cirles {
   border: 2px solid #bbb;
   margin: 0 5px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .container .car-preview .color-div .color-cirles.active {
+  -webkit-box-shadow: 0 0 15px #666;
+          box-shadow: 0 0 15px #666;
+  height: 30px;
+  border-color: #fff;
+  width: 30px;
 }
 
 body .container .car-preview .color-div .silver {

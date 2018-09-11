@@ -120,6 +120,13 @@ body{
                     border: 2px solid #bbb;
                     margin: 0 5px;
                     cursor: pointer;
+                    transition: 0.3s;
+                    &.active{
+                        box-shadow: 0 0 15px #666;
+                        height: 30px;
+                        border-color: #fff;
+                        width: 30px;
+                    }
                 }
                 .silver{
                     background: #ddd;
