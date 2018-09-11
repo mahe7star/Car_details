@@ -155,6 +155,10 @@ body .container .car-preview {
   grid-column: 1;
 }
 
+body .container .car-preview .car-wrapper {
+  text-align: center;
+}
+
 body .container .car-preview .car-wrapper .img-container {
   text-align: center;
 }
