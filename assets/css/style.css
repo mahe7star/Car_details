@@ -164,8 +164,6 @@ body .container .car-preview .car-wrapper .img-container {
 }
 
 body .container .car-preview .car-wrapper .car-image {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   width: 80%;
 }
 
