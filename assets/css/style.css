@@ -335,10 +335,6 @@ body .container .car-details .rating .rating-wrapper .bar-wrapper .rating-bar .r
   color: #444;
 }
 
-body .container .car-details .view-all {
-  text-align: center;
-}
-
 body .container .car-details .view-all a {
   text-decoration: none;
   font-weight: bold;
